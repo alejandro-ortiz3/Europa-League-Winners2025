@@ -1,0 +1,124 @@
+body{
+   background: linear-gradient(135deg, #1a1306, #3d2b1f, #bfa76f);
+   color: white;
+   font-family: 'Cinzel', serif;
+}
+
+h1{
+    margin-bottom: 3px; 
+    text-align: center;   
+    
+    font-size: 3rem;
+    font-weight: 700;
+    
+    background: linear-gradient(90deg, #fff8dc, #ffd700, #fff8dc);
+    background-size: 200%;
+    animation: shine 5s linear infinite;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+h2{
+    margin-top: 1px;    
+    text-align: center;   
+}
+
+p{
+    color: #fffdf5;
+    font-family: cursive;
+    word-spacing: 1px;
+}
+
+.thisstuff{
+    margin: 20px 50px 20px 50px;
+}
+
+.subtitle{
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+}
+
+.slider {
+    overflow-x: hidden;
+    overflow-y: visible;
+    width: 100%;
+    height: 330px;
+    position: center;
+}
+
+.slide-track {
+    display: flex;
+    width: max-content;
+    animation: slide-left 85s linear infinite;
+}
+
+.slide-track.reverse {
+    animation: slide-right 115s linear infinite;
+}
+
+.portrait {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+    margin-right: 16px;
+    object-fit: cover;
+    border-radius: 10px;
+
+    border: 2px solid #ffd700;
+    box-shadow:
+      0 0 50px #ffd700,
+      0 0 50px #ffd700,
+      0 0 50px #ffec8b;
+
+}
+
+@keyframes slide-left {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(-50%)}
+}
+
+@keyframes slide-right {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes shine {
+    0% { background-position: 0%; }
+    100% { background-position: 200%; }
+}
+
+/* whats written below was used to put the intial 
+h1 text next (right of) title, decided to not have it this way
+
+.title-row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.title-row h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.title-row p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+//Used this below to center the images but decided not to do this
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+    */
+
