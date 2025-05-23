@@ -54,11 +54,11 @@ p{
 .slide-track {
     display: flex;
     width: max-content;
-    animation: slide-left 85s linear infinite;
+    animation: slide-left 125s linear infinite;
 }
 
 .slide-track.reverse {
-    animation: slide-right 115s linear infinite;
+    animation: slide-right 155s linear infinite;
 }
 
 .portrait {
@@ -71,9 +71,9 @@ p{
 
     border: 2px solid #ffd700;
     box-shadow:
-      0 0 50px #ffd700,
-      0 0 50px #ffd700,
-      0 0 50px #ffec8b;
+      0 0 5px #ffd700,
+      0 0 10px #ffd700,
+      0 0 5px #ffec8b;
 
 }
 
